@@ -69,3 +69,10 @@ int main() {
     int choice = 0;                         // Menyimpan pilihan menu
     int value;                              // Menyimpan nilai input
 
+    while (choice != 5) {                   // Looping menu hingga user memilih keluar
+        cout << "1. Push\n";                // Tampilkan pilihan menu
+        cout << "2. Pop\n";
+        cout << "3. Peek\n";
+        cout << "4. Exit\n";
+        cout << "Enter your choice: ";
+        cin >> choice;                      // Input pilihan user
