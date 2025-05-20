@@ -62,3 +62,10 @@ public:
         return top == NULL;                 // Jika top = NULL, maka stack kosong
     }
 };
+
+int main() {
+    Stack stack;                            // Buat objek stack
+
+    int choice = 0;                         // Menyimpan pilihan menu
+    int value;                              // Menyimpan nilai input
+
