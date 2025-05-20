@@ -34,4 +34,10 @@ public:
 
     // Pop operation: Remove the topmost element from the stack
     void pop() {
-  
+        if (isEmpty()) {                    // Cek apakah stack kosong
+            cout << "Stack is empty." << endl;
+            return;                         // Berhenti jika kosong (tambah return untuk mencegah error)
+        }
+        cout << "Popped value: " << top->data << endl;  // Tampilkan data yang akan di-pop
+        top = top->next;                    // Pindahkan pointer top ke node berikutnya (hapus top lama)
+    }
