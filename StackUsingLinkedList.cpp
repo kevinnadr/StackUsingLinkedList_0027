@@ -14,3 +14,6 @@ public:
 
 // Stack class
 class Stack {
+private:
+    Node *top;                              // Pointer ke elemen paling atas dalam stack
+
