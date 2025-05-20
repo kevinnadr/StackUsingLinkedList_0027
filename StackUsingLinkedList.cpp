@@ -17,3 +17,7 @@ class Stack {
 private:
     Node *top;                              // Pointer ke elemen paling atas dalam stack
 
+public:
+    Stack() {
+        top = NULL;                         // Stack awalnya kosong (top = NULL)
+    }
