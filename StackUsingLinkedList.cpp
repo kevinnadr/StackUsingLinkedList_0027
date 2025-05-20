@@ -24,4 +24,5 @@ public:
 
     // Push operation: Insert an element onto the top of the stack
     int push(int value) {
+        Node* newNode = new Node();         // 1. Buat node baru secara dinamis
  
