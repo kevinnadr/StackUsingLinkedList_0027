@@ -25,4 +25,11 @@ public:
     // Push operation: Insert an element onto the top of the stack
     int push(int value) {
         Node* newNode = new Node();         // 1. Buat node baru secara dinamis
- 
+        newNode->data = value;              // 2. Isi node baru dengan nilai yang diberikan
+        newNode->next = top;                // 3. Sambungkan node baru ke node teratas saat ini
+        top = newNode;                      // 4. Jadikan node baru sebagai top baru
+        cout << "Push value: " << value << endl;
+        return value;                       // Kembalikan nilai yang dimasukkan
+    }
+
+   
