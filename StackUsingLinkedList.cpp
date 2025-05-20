@@ -47,4 +47,14 @@ public:
         if (top == NULL) {                  // Cek apakah stack kosong
             cout << "List is empty." << endl;
         }
- 
+        else {
+            Node* current = top;            // Mulai dari top
+            while (current != NULL) {       // Selama node masih ada
+                cout << current->data << " " << endl;  // Tampilkan data node
+                current = current->next;    // Lanjut ke node berikutnya
+            }
+            cout << endl;
+        }
+    }
+
+    
