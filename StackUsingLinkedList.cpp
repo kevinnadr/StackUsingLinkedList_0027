@@ -41,3 +41,10 @@ public:
         cout << "Popped value: " << top->data << endl;  // Tampilkan data yang akan di-pop
         top = top->next;                    // Pindahkan pointer top ke node berikutnya (hapus top lama)
     }
+
+    // Peek/Top operation: Tampilkan semua isi stack
+    void peek() {
+        if (top == NULL) {                  // Cek apakah stack kosong
+            cout << "List is empty." << endl;
+        }
+ 
