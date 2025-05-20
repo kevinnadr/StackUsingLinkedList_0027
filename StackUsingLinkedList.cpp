@@ -57,4 +57,8 @@ public:
         }
     }
 
-    
+    // isEmpty operation: Cek apakah stack kosong
+    bool isEmpty() {
+        return top == NULL;                 // Jika top = NULL, maka stack kosong
+    }
+};
