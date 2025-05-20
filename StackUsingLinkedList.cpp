@@ -76,3 +76,42 @@ int main() {
         cout << "4. Exit\n";
         cout << "Enter your choice: ";
         cin >> choice;                      // Input pilihan user
+
+        switch (choice) {                   // Cek pilihan user
+        case 1:
+            cout << "Enter the value to push: ";
+            cin >> value;                   // Input nilai
+            stack.push(value);              // Panggil fungsi push
+            break;
+
+        case 2:
+            if (!stack.isEmpty()) {         // Jika stack tidak kosong
+                stack.pop();                // Hapus elemen paling atas
+            }
+            else {
+                cout << "Stack is empty. Cannot pop." << endl;
+            }
+            break;
+
+        case 3:
+            if (!stack.isEmpty()) {         // Jika stack tidak kosong
+                stack.peek();               // Tampilkan semua elemen
+            }
+            else {
+                cout << "Stack is empty. No top value." << endl;
+            }
+            break;
+
+        case 4:
+            cout << "Exiting program." << endl;  // Keluar dari program
+            break;
+
+        default:
+            cout << "Invalid choice. Try again." << endl; // Penanganan input yang salah
+            break;
+        }
+
+        cout << endl;                       // Spasi antar iterasi menu
+    }
+
+
