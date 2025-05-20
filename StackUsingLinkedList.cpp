@@ -21,3 +21,7 @@ public:
     Stack() {
         top = NULL;                         // Stack awalnya kosong (top = NULL)
     }
+
+    // Push operation: Insert an element onto the top of the stack
+    int push(int value) {
+ 
